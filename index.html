@@ -121,10 +121,12 @@
         }
 
         .time-box {
-            min-width: 70px;
+            min-width: 130px;    /* 1. Diperlebar supaya jam yang panjang muat */
+            margin-right: 20px;  /* 2. INI KUNCINYA: Memberi jarak (spasi) ke kanan */
             font-weight: 700;
             color: var(--primary-color);
             font-size: 0.9rem;
+            flex-shrink: 0;      /* 3. Agar kotak jam tidak gepeng saat layar kecil */
         }
 
         .details h3 {
@@ -309,3 +311,4 @@
 </body>
 
 </html>
+
